@@ -8,21 +8,29 @@
 
 html, body {
     height: 100vh;
-    width: 100vh;
-    background-color: aqua;
+    width: 100vw;
 }
 
 body {
     background: url('../imagens/fundo-madeira.jpg') no-repeat top center;
-    background-size: cover;
+    background: cover;
     background-attachment: fixed;
-
 }
 
 main {
     position: relative;
     height: 100vh;
+
 }
+
+/* Para fazer com que o Iphone fique no centro independente da configuração da tela, seja celular ou tablet 
+
+position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+*/
 
 section#telefone {
     position: absolute;
@@ -43,4 +51,24 @@ iframe#tela {
     left: 22px;
     width: 269px;
     height: 470px;
+}
+
+section#redes-sociais {
+    text-align: right;
+}
+
+section#redes-sociais img {
+    width: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.400);
+
+    box-sizing: border-box;
+}
+
+section#redes-sociais img:hover {
+    border: 2px solid rgba(255, 255, 255, 0.637);
+    transform: translate(-3px, -3px);
+    box-shadow:  5px 5px 10px rgba(0, 0, 0, 0.623);
+    transition: tranform 0.3s;
 }
